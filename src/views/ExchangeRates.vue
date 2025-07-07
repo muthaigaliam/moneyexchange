@@ -6,6 +6,20 @@
     ]"
     style="background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c44367f?auto=format&fit=crop&w=1350&q=80'); background-size: cover; background-attachment: fixed;"
   >
+
+    <!-- ✅ Desktop Nav -->
+    <nav class="hidden md:block fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur shadow-md">
+      <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-3">
+        <div class="text-2xl font-bold text-blue-600">BRIGHT TRADING LTD</div>
+        <ul class="flex space-x-6 text-sm font-semibold text-gray-800 dark:text-gray-200">
+          <li><a href="#rates" class="hover:text-blue-500">Exchange Rates</a></li>
+          <li><a href="#about" class="hover:text-blue-500">About Us</a></li>
+          <li><a href="#why" class="hover:text-blue-500">Why Us</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- Dark Mode Toggle -->
     <button @click="toggleDarkMode"
       class="fixed top-4 right-4 z-50 bg-white dark:bg-gray-700 text-gray-700 dark:text-white rounded-full p-2 shadow hover:scale-105 transition"
@@ -31,13 +45,12 @@
     </transition>
 
     <!-- Hero Section -->
-    <header class="text-center py-16 bg-white/60 dark:bg-gray-800/70 backdrop-blur-sm rounded-b-xl shadow-md">
-      <h1
-        class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500 overflow-hidden">
+    <header class="text-center py-16 mt-14 bg-white/60 dark:bg-gray-800/70 backdrop-blur-sm rounded-b-xl shadow-md">
+      <h1 class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 to-blue-500 overflow-hidden">
         {{ typedTitle }}
       </h1>
       <p class="mt-4 text-lg max-w-3xl mx-auto text-gray-700 dark:text-gray-300 animate-fadeInUp px-4">
-        At Bright Trading Ltd, we specialize in fast and secure currency exchange services across Africa,United States,China and Russia.
+        At Bright Trading Ltd, we specialize in fast and secure currency exchange services across Africa, United States, China and Russia.
       </p>
     </header>
 
@@ -88,20 +101,21 @@
           class="w-24 filter grayscale hover:grayscale-0 transition" />
       </div>
     </section>
-<!-- Developer Info -->
-<section class="max-w-4xl mx-auto mt-12 px-6 py-6 bg-white/70 dark:bg-gray-800/70 rounded-xl shadow-md backdrop-blur-sm text-center">
-  <h2 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Developed by</h2>
-  <p class="text-gray-700 dark:text-gray-300">
-    Email:
-    <a href="mailto:samuelngari93@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">
-      samuelngari93@gmail.com
-    </a><br>
-    Phone:
-    <a href="tel:+254752341183" class="text-blue-600 dark:text-blue-400 hover:underline">
-      +254 752 341183
-    </a>
-  </p>
-</section>
+
+    <!-- Developer Info -->
+    <section id="contact" class="max-w-4xl mx-auto mt-12 px-6 py-6 bg-white/70 dark:bg-gray-800/70 rounded-xl shadow-md backdrop-blur-sm text-center">
+      <h2 class="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Developed by</h2>
+      <p class="text-gray-700 dark:text-gray-300">
+        Email:
+        <a href="mailto:samuelngari93@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">
+          samuelngari93@gmail.com
+        </a><br>
+        Phone:
+        <a href="tel:+254752341183" class="text-blue-600 dark:text-blue-400 hover:underline">
+          +254 752 341183
+        </a>
+      </p>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-black text-white py-6 mt-12">
